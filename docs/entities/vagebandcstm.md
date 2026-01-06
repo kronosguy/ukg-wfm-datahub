@@ -1,0 +1,27 @@
+# vAgeBandCstm
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+**Pipeline:** This data is populated as silver data. Loaded via BQ Cloud Function
+
+## What it is
+
+This view would need to be loaded by the customer - not populated by default
+
+## Fields
+
+| Field        | Description                                                                  |
+|:-------------|:-----------------------------------------------------------------------------|
+| vAgeBandCstm | This view would need to be loaded by the customer - not populated by default |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.

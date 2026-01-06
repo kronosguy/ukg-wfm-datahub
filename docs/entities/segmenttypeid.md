@@ -1,0 +1,28 @@
+# segmentTypeId
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+## What it is
+
+The segment type ID
+
+## Fields
+
+| Field         | Type   | Description                |
+|:--------------|:-------|:---------------------------|
+| segmentTypeId | INT64  | The segment type ID        |
+| segmentTypeId | INT64  | The shift segment type ID  |
+| segmentTypeId | INT64  | Segment Type ID            |
+| segmentTypeId | INT64  | Open Shift Segment Type ID |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.

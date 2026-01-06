@@ -1,0 +1,25 @@
+# auditTransferLaborEntryName2
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+## What it is
+
+Transfer Labor Category Name 2 (at the time of transaction)
+
+## Fields
+
+| Field                        | Type   | Description                                                 |
+|:-----------------------------|:-------|:------------------------------------------------------------|
+| auditTransferLaborEntryName2 | STRING | Transfer Labor Category Name 2 (at the time of transaction) |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.

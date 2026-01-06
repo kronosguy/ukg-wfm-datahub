@@ -1,0 +1,25 @@
+# offSetMinQty
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+## What it is
+
+The period offset in minutes, from -720 to 720. The value must be a multiple of 15.
+
+## Fields
+
+| Field        | Type   | Description                                                                         |
+|:-------------|:-------|:------------------------------------------------------------------------------------|
+| offSetMinQty | INT64  | The period offset in minutes, from -720 to 720. The value must be a multiple of 15. |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.

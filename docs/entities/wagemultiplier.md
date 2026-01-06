@@ -1,0 +1,26 @@
+# wageMultiplier
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+## What it is
+
+Indicates pay code multiplier of hours times base wage - 1 is regular, 1.5 is premium pay, etc
+
+## Fields
+
+| Field          | Type    | Description                                                                                    |
+|:---------------|:--------|:-----------------------------------------------------------------------------------------------|
+| wageMultiplier | FLOAT64 | Indicates pay code multiplier of hours times base wage - 1 is regular, 1.5 is premium pay, etc |
+| wageMultiplier | FLOAT   | Indicates pay code multiplier of hours times base wage - 1 is regular, 1.5 is premium pay, etc |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.

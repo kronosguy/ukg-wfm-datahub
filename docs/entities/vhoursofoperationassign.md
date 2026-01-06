@@ -1,0 +1,27 @@
+# vHoursOfOperationAssign
+
+> Auto-generated from a Data Dictionary workbook. Output is public-safe by default.
+
+**Pipeline:** hoursOfOperationAssign (DR)
+
+## What it is
+
+The orgs assigned to the hours of operation
+
+## Fields
+
+| Field                   | Description                                 |
+|:------------------------|:--------------------------------------------|
+| vHoursOfOperationAssign | The orgs assigned to the hours of operation |
+
+## How to use it
+
+- Confirm the **grain** (what one row represents) before joining.
+- Join using **IDs/keys**, not labels.
+- Apply **partition/date filters** early (BigQuery cost control).
+- Validate with a small reference sample before publishing dashboards.
+
+## Gotchas
+
+- If this entity participates in many-to-many joins, document the safe join path here.
+- If attributes are “current only,” document how to handle historical reporting here.
