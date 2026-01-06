@@ -10,3 +10,5 @@ Thumbs.db
 # IMPORTANT: keep raw dictionaries out of a public repo
 data/
 exports/
+data/dictionary.xlsx
+data/*.xlsx
