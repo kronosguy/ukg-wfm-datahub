@@ -31,6 +31,7 @@ nav:
   - Use Cases:
       - Index: use-cases/index.md
       - Overtime Utilization: use-cases/overtime-utilization.md
+      - Schedule vs Worked Variance: use-cases/schedule-vs-worked.md
   - Roles:
       - Analyst: roles/analyst.md
       - Engineer: roles/engineer.md
