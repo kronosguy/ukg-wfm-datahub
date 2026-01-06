@@ -15,3 +15,9 @@ nav:
       - Partition Filters: patterns/partition-filters.md
       - Join Safety: patterns/join-safety.md
       - Validation Checklist: patterns/validation-checklist.md
+  - Domains:
+      - Overview: domains/overview.md
+      - People: domains/people.md
+      - Org Structure: domains/org-structure.md
+      - Timecard: domains/timecard.md
+      - Schedule: domains/schedule.md
