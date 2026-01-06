@@ -11,3 +11,7 @@ nav:
       - Public Safety Rules: concepts/public-safety.md
       - Grain and Keys: concepts/grain-and-keys.md
       - Detail vs Summary: concepts/detail-vs-summary.md
+  - Patterns:
+      - Partition Filters: patterns/partition-filters.md
+      - Join Safety: patterns/join-safety.md
+      - Validation Checklist: patterns/validation-checklist.md
