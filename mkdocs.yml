@@ -1,0 +1,9 @@
+site_name: UKG Pro WFM Data Hub
+theme:
+  name: material
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Quickstart: getting-started/quickstart.md
