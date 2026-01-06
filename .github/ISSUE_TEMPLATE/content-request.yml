@@ -1,0 +1,26 @@
+name: Content Request
+description: Request a new use case, domain page, or template
+title: "[Content]: "
+labels: ["content"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What page or topic should be added?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed?
+      description: Who needs it and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details (optional)
+      description: Any notes, examples, or known gotchas.
+    validations:
+      required: false

@@ -1,0 +1,26 @@
+name: Bug / Incorrect Guidance
+description: Report incorrect info, broken nav, or guidance that causes mismatches
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Describe the issue and where it appears.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What does this break or confuse?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix (optional)
+      description: If you know the fix, propose it.
+    validations:
+      required: false
