@@ -1,0 +1,28 @@
+# vPeopleEmail
+
+**Group:** Detail Dataset → People Detail Views
+
+- Non-Effective Dated - Email Addresses
+
+## Metadata
+
+| Field | Value |
+| --- | --- |
+| Dataset / View / Table | vPeopleEmail |
+| Unique Identifier | personId,contactTypeId |
+| Source Pipeline | people (CDC) |
+| Scrubbing | DO NOT LOAD |
+
+## Columns
+
+**Column count:** 7
+
+| Column | Data Type | Description | PII/Confidential | Scrubbing |
+| --- | --- | --- | --- | --- |
+| personId | INT64 | Used to join to people dimension |  |  |
+| smsSwt | BOOLEAN | SMS switch |  |  |
+| hasEmailNotificationDeliverySwt | BOOLEAN | Has email notification delivery switch |  |  |
+| contactTypeId | INT64 | Contact type ID |  |  |
+| contactType | STRING | Contact type | PII | BLANK |
+| contactData | STRING | Contact info | PII | BLANK |
+| updateDtm | DATETIME | The UTC date/time stamp of when the row was inserted or updated in BigQuery |  |  |

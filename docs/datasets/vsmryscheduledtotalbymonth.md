@@ -1,0 +1,24 @@
+# vSmryScheduledTotalByMonth
+
+**Group:** Detail Dataset → Data Detail Validation
+
+Scheduled Total hours and amounts by month (IA vs Data Hub Summary)
+
+## Metadata
+
+| Field | Value |
+| --- | --- |
+| Dataset / View / Table | vSmryScheduledTotalByMonth |
+| Unique Identifier | yearMonth |
+| Source Pipeline | valScheduledTotal (DR) |
+
+## Columns
+
+**Column count:** 4
+
+| Column | Data Type | Description | PII/Confidential | Scrubbing |
+| --- | --- | --- | --- | --- |
+| yearMonth | STRING | Scheduled Total Year and Month Loaded |  |  |
+| SmryDiffRowCount | INT64 | Number of rows difference from vScheduleTotal |  |  |
+| allRowCount | INT64 | Total row count (allRowCount) |  |  |
+| perCentDiff | FLOAT | Percent difference from vTimecardTotal |  |  |
