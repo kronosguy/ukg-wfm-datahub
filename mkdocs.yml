@@ -33,6 +33,8 @@ nav:
       - Overtime Utilization: use-cases/overtime-utilization.md
       - Schedule vs Worked Variance: use-cases/schedule-vs-worked.md
       - Approval Cycle Time: use-cases/approval-cycle-time.md
+      - Accrual Health Monitor: use-cases/accrual-health.md
+      - Punch Investigation: use-cases/punch-investigation.md      
   - Roles:
       - Analyst: roles/analyst.md
       - Engineer: roles/engineer.md
