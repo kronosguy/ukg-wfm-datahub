@@ -21,6 +21,22 @@ The Data Hub schema is **highly normalized**, which is great for storage but pai
 
 > **⚠️ WARNING**: `person_id` is NOT unique over time if you are handling history! The API often returns snapshots. In BigQuery, always `QUALIFY ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_date DESC) = 1` to get the *current* state, unless doing point-in-time reporting.
 
+
+---
+
+## 🚦 Phase 0: The "Wish I Knew" List
+
+> **"DataHub unlocks powerful analytics, but it isn’t real‑time."**
+
+Before you write a single line of SQL, internalize these 6 lessons from real-world implementations:
+
+1.  **Expect Latency**: ~4h within UKG + downstream landing = **5–6h delay** to your warehouse.
+2.  **CDC ≠ Everything**: Attendance/Setup data (Business Structure, Pay Rules) are often **Full Loads**. Treat them as snapshots.
+3.  **Windows Matter**: Default is 30 days back / 7 days forward. Modifying this impacts volume, cost, and runtime aggressively.
+4.  **Follow the Masterbook**: The Data Dictionary is your absolute source of truth for pipelines and keys.
+5.  **Sequence or Suffer**: Refresh pipelines in the dependency order (Setup -> Person -> Transaction) to avoid referential breaks.
+6.  **Know your GCP**: *Enterprise* = You own the GCP project. *Premium* = UKG owns it. This dictates your access level.
+
 ---
 
 ## 🔗 2. The Golden Join Rules

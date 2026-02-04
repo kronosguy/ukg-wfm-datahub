@@ -5,6 +5,7 @@ plugins:
   - search
 nav:
   - Home: index.md
+  - Official Resources: resources.md
   - Getting Started:
       - Quickstart: getting-started/quickstart.md
   - Concepts:
@@ -21,6 +22,7 @@ nav:
       - Partition Filters: patterns/partition-filters.md
       - Join Safety: patterns/join-safety.md
       - Validation Checklist: patterns/validation-checklist.md
+      - Latency & Real-Time Myths: patterns/latency-and-integration.md
       - Data Quality & Best Practices: patterns/data-quality.md
   - Domains:
       - Overview: domains/overview.md
