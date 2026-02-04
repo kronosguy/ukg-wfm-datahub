@@ -21,6 +21,7 @@ nav:
       - Partition Filters: patterns/partition-filters.md
       - Join Safety: patterns/join-safety.md
       - Validation Checklist: patterns/validation-checklist.md
+      - Data Quality & Best Practices: patterns/data-quality.md
   - Domains:
       - Overview: domains/overview.md
       - People: domains/people.md
